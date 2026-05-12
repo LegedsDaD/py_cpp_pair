@@ -4,10 +4,6 @@ Write C++ directly inside Python strings, auto-generate `pybind11` bindings, com
 
 **Version:** `1.0.0`
 
-## Logo
-
-`py_cpp_pair` (logo placeholder) — add your project logo at `docs/assets/logo.png` when you’re ready.
-
 ## Badges
 
 - PyPI: `py_cpp_pair 1.0.0` (import name: `py_cpp`)

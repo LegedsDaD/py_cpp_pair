@@ -178,14 +178,3 @@ See `docs/`:
 ## Contributing
 
 See `CONTRIBUTING.md`.
-
-## Release (GitHub Actions)
-
-This repo uses a single manual workflow: `.github/workflows/release.yml`.
-
-- **Mode = `check`**: builds `sdist`/`wheel` and runs `twine check` (no publishing).
-- **Mode = `publish`**: runs the same checks, then creates a GitHub Release and publishes to PyPI using **Trusted Publishing** (OIDC).
-
-Trusted Publishing setup (one-time):
-
-- In your PyPI project settings, add this GitHub repo as a **Trusted Publisher** (no `PYPI_API_TOKEN` secret needed).

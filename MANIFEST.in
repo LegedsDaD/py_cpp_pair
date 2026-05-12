@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include py_cpp/templates *.cpp
+recursive-include py_cpp/data *.json
+recursive-include docs *.md
+

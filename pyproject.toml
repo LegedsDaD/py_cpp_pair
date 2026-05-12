@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_cpp_pair"
+version = "1.0.0"
+description = "Write C++ inside Python strings, auto-generate pybind11 bindings, compile cross-platform, and inject symbols at runtime."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "py_cpp_pair contributors" }]
+license = { text = "MIT" }
+dependencies = ["pybind11>=2.11"]
+
+[project.urls]
+Homepage = "https://github.com/your-org/py_cpp_pair"
+Documentation = "https://github.com/your-org/py_cpp_pair/tree/main/docs"
+Repository = "https://github.com/your-org/py_cpp_pair"
+Issues = "https://github.com/your-org/py_cpp_pair/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.10"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["py_cpp*"]
+
+[tool.setuptools.package-data]
+py_cpp = ["templates/*.cpp", "data/*.json"]
+
+[tool.ruff]
+line-length = 100

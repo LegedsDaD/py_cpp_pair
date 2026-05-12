@@ -14,7 +14,7 @@ Write C++ directly inside Python strings, auto-generate `pybind11` bindings, com
 ## Install
 
 ```bash
-pip install py_cpp_pair
+pip install py-cpp-pair
 ```
 
 Import name stays:
